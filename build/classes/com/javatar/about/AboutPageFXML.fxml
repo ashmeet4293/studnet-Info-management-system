@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javatar.about.AboutPageFXMLController">
+   <children>
+      <TextArea editable="false" layoutX="70.0" layoutY="25.0" prefHeight="353.0" prefWidth="507.0" text="This project was developed using java technology &#10;which facilitates management of student records&#10; by enabling user to create, read&#10;update, delete andsearch operation. &#10;&#10;This application development provides &#10;solid foundation of project development&#10;covering different architecture as well as &#10;principles.&#10;&#10;&#10;Mail : ashmeet4293@gmail.com">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javatar.dashboard.DashboardFXMLController">
+   <children>
+      <Label layoutX="759.0" layoutY="1.0" prefHeight="64.0" prefWidth="248.0" text="DASHBOARD" textAlignment="CENTER" textFill="#308a60">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="52.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogout" layoutX="1268.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleActionLogout" prefHeight="49.0" prefWidth="77.0" text="Logout" />
+      <GridPane layoutX="58.0" layoutY="126.0" prefHeight="374.0" prefWidth="334.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="109.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0" prefWidth="206.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="43.0" prefWidth="156.0" text="USER ID">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="43.0" prefWidth="156.0" text="NAME" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="43.0" prefWidth="156.0" text="ROLL NO" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="43.0" prefWidth="156.0" text="FEE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="43.0" prefWidth="156.0" text="ADDRESS" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="43.0" prefWidth="156.0" text="SCHOOL" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserId" editable="false" prefHeight="34.0" prefWidth="193.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtName" prefHeight="34.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtRollNo" prefHeight="34.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtFee" prefHeight="34.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtAddress" prefHeight="34.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtSchool" prefHeight="34.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label prefHeight="43.0" prefWidth="156.0" text="DOB" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="43.0" prefWidth="156.0" text="EMAIL" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="43.0" prefWidth="156.0" text="USERNAME" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="43.0" prefWidth="156.0" text="PASSWORD" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="txtDOB" prefHeight="25.0" prefWidth="248.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="txtEmail" prefHeight="34.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="txtUsername" prefHeight="34.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <PasswordField fx:id="pwdPassword" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label prefHeight="43.0" prefWidth="156.0" text="Gender" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rdMale" mnemonicParsing="false" text="Male" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <RadioButton fx:id="rdFemale" mnemonicParsing="false" text="Female" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </RadioButton>
+         </children>
+      </GridPane>
+      <HBox layoutX="67.0" layoutY="576.0" prefHeight="49.0" prefWidth="365.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleActionBtnClear" prefHeight="41.0" prefWidth="84.0" text="CLEAR" />
+            <Button mnemonicParsing="false" onAction="#handleActionBtnCreate" prefHeight="41.0" prefWidth="84.0" text="CREATE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Glow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#1c82d6" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleActionBtnUpdate" prefHeight="41.0" prefWidth="84.0" text="UPDATE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorAdjust />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#17e408" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleActionBtnDelete" prefHeight="41.0" prefWidth="84.0" text="DELETE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="2.0">
+                     <light>
+                        <Light.Distant color="#f50202" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="tblStudentData" layoutX="444.0" layoutY="126.0" onKeyReleased="#handleTblKeyReleasedAction" onMouseClicked="#handleTblMouseClickedAction" prefHeight="374.0" prefWidth="837.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="92.0" text="id" />
+          <TableColumn fx:id="colName" prefWidth="197.0" text="Name" />
+            <TableColumn fx:id="colRoll" prefWidth="123.0" text="Roll No" />
+            <TableColumn fx:id="colFee" prefWidth="130.0" text="Fee" />
+            <TableColumn fx:id="colDob" prefWidth="165.0" text="DOB" />
+            <TableColumn fx:id="colUsername" prefWidth="128.0" text="Username" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearchUser" alignment="CENTER" layoutX="750.0" layoutY="78.0" onKeyReleased="#handleSearchOnKeyReleased" prefHeight="26.0" prefWidth="266.0" promptText="Search User" />
+      <MenuBar layoutY="-1.0" prefHeight="34.0" prefWidth="365.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#hanldeMenuNewAction" text="New User" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#hanldeMenuAboutAction" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#hanldeMenuLogoutAction" text="Logout" />
+                  <MenuItem mnemonicParsing="false" onAction="#hanldeMenuExitAction" text="Exit" />
+              </items>
+            </Menu>
+        </menus>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </MenuBar>
+   </children>
+</AnchorPane>
